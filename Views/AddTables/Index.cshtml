@@ -1,0 +1,27 @@
+﻿@model IEnumerable<TwoTableWebAPI.Models.JoinClass1>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<center>
+<h2>Join Multiple Tabale Using Web API</h2>
+</hr>
+
+    <! –– add Table ––>
+<table border="1">
+    <tr>
+      <th>Country</th>
+      <th>City</th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>@item.getCountry.cName</td>
+        <td>@item.getCity.CityName</td>
+    </tr>
+}
+
+</table>
+
+</center>
